@@ -55,7 +55,7 @@ public class Cart {
         if (items.isEmpty()) {
             return "Cart Is Empty";
         }
-        Stringbuilder sb = new StringBuilder("Cart Items:\n");
+        StringBuilder sb = new StringBuilder("Cart Items:\n");
         for (Map.Entry<Game, Integer> entry : items.entrySet()) {
             sb.append(String.format("%s x%d - $%.2f%n", entry.getKey().getTitle(), entry.getValue(),
                     entry.getKey().getPrice() * entry.getValue()));
