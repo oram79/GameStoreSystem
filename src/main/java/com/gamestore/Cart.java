@@ -1,9 +1,10 @@
 package com.gamestore;
 import java.util.HashMap;
 import java.util.Map;
+import java.lang.StringBuilder;
 
 public class Cart {
-    private Map<Game, Integer> items;
+    private Map<Game, Integer> items = new HashMap<>();
 
     public Cart() {
         this.items = new HashMap<>();
@@ -30,5 +31,36 @@ public class Cart {
             return true;
         }
         return false;
+    }
+
+    // Adding total cost of items being bought //
+    public double getTotalPrice() {
+        return items.entrySet().stream()
+                .mapToDouble(entry -> entry.getKey().getPrice() * entry.getValue())
+                .sum();
+    }
+
+    // Adding all the items to the cart //
+    public Map<Game, Integer> getItems() {
+        return new HashMap<>(items);
+    }
+
+    // Clearing items in the cart //
+    public void clearCart() {
+        items.clear();
+    }
+
+    @Override
+    public String toString() {
+        if (items.isEmpty()) {
+            return "Cart Is Empty";
+        }
+        Stringbuilder sb = new StringBuilder("Cart Items:\n");
+        for (Map.Entry<Game, Integer> entry : items.entrySet()) {
+            sb.append(String.format("%s x%d - $%.2f%n", entry.getKey().getTitle(), entry.getValue(),
+                    entry.getKey().getPrice() * entry.getValue()));
+        }
+        sb.append(String.format("Total: $%.2f",getTotalPrice()));
+        return sb.toString();
     }
 }
