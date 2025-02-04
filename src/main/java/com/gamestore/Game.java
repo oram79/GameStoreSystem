@@ -53,12 +53,10 @@ public class Game {
     }
 
     // Reducing stock when any games are purchased //
-    public boolean reduceStock(int amount) {
+    public void reduceStock(int amount) {
         if (amount > 0 && stock >= amount) {
             stock -= amount;
-            return true;
         }
-        return false;
     }
 
     public void addStock(int amount) {
