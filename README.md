@@ -1,1 +1,1 @@
-## Game store system that allows users to browse and buy games, Program has Junit testing
+## Game store system that allows users to purchase games from the store listing, Program is backed by Junit testing
