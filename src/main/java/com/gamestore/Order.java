@@ -27,5 +27,34 @@ public class Order {
         }
     }
 
+    // Getters //
+    public String getOrderId() {
+        return orderId;
+    }
 
+    public Map<Game, Integer> getPurchasedItems() {
+        return purchasedItems;
+    }
+
+    public double getTotalPrice() {
+        return totalPrice;
+    }
+
+    public LocalDateTime getOrderDate() {
+        return orderDate;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder("Order Summary:\n");
+        sb.append("Order ID: ").append(orderId).append("\n");
+        sb.append("Order Date: ").append(orderDate).append("\n");
+        sb.append("Items Purchased:\n");
+        for (Map.Entry<Game, Integer> entry : purchasedItems.entrySet()) {
+            sb.append(String.format("%s x%d - $%.2f%n", entry.getKey().getTitle(), entry.getValue(),
+                    entry.getKey().getPrice() * entry.getValue()));
+        }
+        sb.append(String.format("Total Price: $%.2f", totalPrice));
+        return sb.toString();
+    }
 }
