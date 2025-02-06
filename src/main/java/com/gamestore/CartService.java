@@ -4,6 +4,8 @@ import com.gamestore.Cart;
 import com.gamestore.Game;
 import com.gamestore.Order;
 
+import java.util.Map;
+
 public class CartService {
     private Cart cart;
 
@@ -29,9 +31,14 @@ public class CartService {
     }
 
     // view the cart //
-    public String viewCart() {
-        return cart.toString();
+    public Cart getCart() {
+        return cart;
     }
+
+    public Map<Game, Integer> viewCart() {
+        return cart.getItems();
+    }
+
 
     // Checkout and submit order
     public Order checkout() {
