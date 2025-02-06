@@ -9,7 +9,7 @@ public class Game {
     private double price;
     private int stock;
 
-    public Game(String id, String title, String genre, double price, int sock) {
+    public Game(String id, String title, String genre, double price, int stock) {
         this.id = id;
         this.title = title;
         this.genre = genre;
@@ -68,7 +68,7 @@ public class Game {
 
     @Override
     public String toString() {
-        return String.format("Game{id='%s', title='%s', genre='%s', price=%.2f, stock=%d}",
+        return String.format("Game ID: '%s' - Title: '%s' - Genre: '%s' - Price: $%.2f - Stock: %d",
                 id, title, genre, price, stock);
     }
 
