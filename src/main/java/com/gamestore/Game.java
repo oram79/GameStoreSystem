@@ -68,7 +68,7 @@ public class Game {
 
     @Override
     public String toString() {
-        return String.format("Game ID: '%s' - Title: '%s' - Genre: '%s' - Price: $%.2f - Stock: %d",
+        return String.format("Game ID: %s - Title: %s - Genre: %s - Price: $%.2f - Stock: %d",
                 id, title, genre, price, stock);
     }
 

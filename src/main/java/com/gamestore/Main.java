@@ -14,9 +14,21 @@ public class Main {
         CartService cartService = new CartService();
 
         // sample games //
-        gameService.addGame(new Game("1", "Farming Simulator 25", "RPG", 79.99, 150));
-        gameService.addGame(new Game("2", "NHL 25", "Sport", 89.99, 150));
-        gameService.addGame(new Game("3", "Hogwarts Legacy", "Fantasy", 89.99, 200));
+        gameService.addGame(new Game("1",
+                "Farming Simulator 25",
+                "RPG",
+                79.99,
+                150));
+        gameService.addGame(new Game("2",
+                "NHL 25",
+                "Sport",
+                89.99,
+                150));
+        gameService.addGame(new Game("3",
+                "Hogwarts Legacy",
+                "Fantasy",
+                89.99,
+                200));
 
         while (true) {
             System.out.println("\n=== Game Store System ===");
