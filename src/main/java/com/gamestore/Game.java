@@ -14,6 +14,7 @@ public class Game {
         this.title = title;
         this.genre = genre;
         this.price = price;
+        this.stock = stock;
     }
 
     // Getters //
