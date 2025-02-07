@@ -9,7 +9,7 @@ public class CartServiceTest {
     @Test
     public void testAddToCart() {
         CartService cartService = new CartService();
-        Game game = new Game("1", "Farming Simulator 25", "RPG", 79.99, 10);
+        Game game = new Game("1", "NHL 25", "Sport", 89.99, 10);
 
         boolean added = cartService.addToCart(game, 2);
 
