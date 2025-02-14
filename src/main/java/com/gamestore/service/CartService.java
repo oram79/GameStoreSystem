@@ -1,8 +1,8 @@
-package com.gamestore;
+package com.gamestore.service;
 
-import com.gamestore.Cart;
-import com.gamestore.Game;
-import com.gamestore.Order;
+import com.gamestore.models.Cart;
+import com.gamestore.models.Game;
+import com.gamestore.models.Order;
 
 public class CartService {
     private Cart cart;

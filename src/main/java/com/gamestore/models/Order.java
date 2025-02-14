@@ -1,4 +1,4 @@
-package com.gamestore;
+package com.gamestore.models;
 
 import java.time.LocalDateTime;
 import java.util.Map;

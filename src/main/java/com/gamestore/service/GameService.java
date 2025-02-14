@@ -1,6 +1,6 @@
-package com.gamestore;
+package com.gamestore.service;
 
-import com.gamestore.Game;
+import com.gamestore.models.Game;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;

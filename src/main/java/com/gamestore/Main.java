@@ -1,9 +1,10 @@
 package com.gamestore;
 
-import com.gamestore.Game;
-import com.gamestore.Order;
-import com.gamestore.CartService;
-import com.gamestore.GameService;
+import com.gamestore.models.Game;
+import com.gamestore.models.Order;
+import com.gamestore.service.CartService;
+import com.gamestore.service.GameService;
+
 import java.util.Optional;
 import java.util.Scanner;
 

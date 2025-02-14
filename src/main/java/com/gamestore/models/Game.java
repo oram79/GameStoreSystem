@@ -1,4 +1,4 @@
-package com.gamestore;
+package com.gamestore.models;
 import java.util.Objects;
 
 
