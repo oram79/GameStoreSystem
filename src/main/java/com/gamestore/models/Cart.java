@@ -57,10 +57,12 @@ public class Cart {
             return "Cart Is Empty";
         }
         StringBuilder sb = new StringBuilder("Cart Items:\n");
+        System.out.println("\n====================");
         for (Map.Entry<Game, Integer> entry : items.entrySet()) {
             sb.append(String.format("%s x%d - $%.2f%n", entry.getKey().getTitle(), entry.getValue(),
                     entry.getKey().getPrice() * entry.getValue()));
         }
+
         sb.append(String.format("Total: $%.2f",getTotalPrice()));
         return sb.toString();
     }
