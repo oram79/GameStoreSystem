@@ -1,5 +1,7 @@
 package com.gamestore;
 
+import com.gamestore.models.Game;
+import com.gamestore.models.Order;
 import org.junit.jupiter.api.Test;
 import java.util.HashMap;
 import java.util.Map;

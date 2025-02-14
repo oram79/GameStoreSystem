@@ -1,6 +1,7 @@
 package com.gamestore;
 
-import com.gamestore.Game;
+import com.gamestore.models.Game;
+import com.gamestore.service.GameService;
 import org.junit.jupiter.api.Test;
 import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
